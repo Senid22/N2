@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>N2</title>
+</head>
+<body>
+    <!-- TOP MENU -->
+    <header>
+
+        <div class="branding">
+            <img src="img/logo.png" alt="logo">
+        </div>
+
+        <div class="token-count">
+            <span class="material-icons">currency_exchange</span>
+            <p>Token N2: <span>12 480</span></p>
+        </div>
+
+        <div class="serach-form">
+            <input type="search" name="search-form" id="header-search" placeholder="Seach Player Space">
+            <button type="submit"><span class="material-icons">search</span></button>
+        </div>
+
+        <div class="quick-links">
+            <ul class="nav navbar-nav" aria-label="${Header menu}" role="menubar">
+                <li><a href="#"><span class="material-icons">analytics</span></a></li>
+                <li><a href="#"><span class="material-icons">person_add</span></a></li>
+                <li><a href="#"><span class="material-icons">domain_add</span></a></li>
+                <li><a href="#"><span class="material-icons">military_tech</span></a></li>
+                <li><a href="#"><span class="material-icons">analytics</span></a></li>
+                <li><a href="#"><span class="material-icons">settings</span></a></li>
+            </ul>
+        </div>
+
+        <div class="user">
+
+        </div>
+
+    </header>
+
+      <!-- SIDE MENU -->
+      <div id="side-menu">
+        <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
+             role="navigation">
+          <div ng-show="::!isViewNative" class="navbar-header">
+            <a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"><span ng-bind="portal.title"></span></a>
+            <a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" ng-href="?id={{::portal.homepage_dv}}" ng-click="collapse()" aria-label="${Go to homepage}">
+              <img ng-src="{{::portal.logo}}" title="ServiceNow" role="presentation" alt="${Portal Logo}" />
+            </a>
+      
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar">
+              <span class="sr-only">${Toggle navigation}</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      
+          <div sp-navbar-toggle="" class="collapse navbar-right" id="sp-nav-bar">
+            <!-- Include The Menu -->
+            <sp-widget widget="::data.menu"></sp-widget>
+            <ul ng-if="(!user.logged_in && page.id != portal.login_page_dv && !data.hasLogin)" class="nav navbar-nav" role="presentation">
+              <li role="presentation"><a href ng-click="::openLogin()">${Login}</a></li>
+            </ul>
+            <ul ng-if="user.logged_in" class="nav navbar-nav" role="menubar">
+              <!-- chat, avatar, and logout -->
+              <li ng-if="::(data.connect_support_queue_id && !isAgentChatConfigured)" role="presentation"><a href ng-click="openPopUp()" role="menuitem">${Live Chat}</a></li>
+              <li ng-if="showAvatar" class="hidden-xs dropdown" role="presentation">
+                <a href class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false" title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true">
+                  <span class="navbar-avatar" aria-hidden="true"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span>
+                  <span class="visible-lg-inline">{{::user.name}}</span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}">
+                  <li role="presentation"><a tabindex="-1" ng-href="?id=user_profile&sys_id={{::user.sys_id}}" role="menuitem">${Profile}</a></li>
+                  <li ng-if="::!(isViewNative || isViewNativeTablet)" role="presentation"><a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem">${Logout}</a></li>
+                </ul>
+              </li>
+              <li ng-if="showXSAvatar" class="visible-xs-block" role="presentation"><a role="menuitem" ng-href="?id=user_profile&sys_id={{::user.sys_id}}" ng-click="collapse()">
+                <span class="navbar-avatar"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span>{{::user.name}}</a>
+              </li>
+              <li ng-if="::!(isViewNative || isViewNativeTablet)" class="visible-xs-block" role="presentation"><a role="menuitem" ng-href="{{::portal.logoutUrl}}" ng-click="collapse()">${Logout}</a></li>
+            </ul>
+          </div>
+        </nav>
+        <widget id="mycompany-custom-side-menu" options="{'hide_scripted_filtered_lists':false,'hide_link_menu_items':false}"></widget>
+      </div>
+
+</body>
+</html>
