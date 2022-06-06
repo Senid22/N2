@@ -1,0 +1,38 @@
+/**** 
+MASTER STYLE 
+This is master SCSS file. 
+All style is imported and compiled below.
+****/
+
+/**** Includes ****/
+@import 'includes';
+
+/**** Reset CSS ****/
+@import 'reset';
+
+/**** Variables ****/
+@import 'variables';
+
+/**** Mixins ****/
+@import 'mixins';
+
+/**** Global ****/
+@import 'global';
+
+/**** Widgets ****/
+@import 'widgets';
+
+/**** Header ****/
+@import 'header';
+
+/**** Main ****/
+@import 'main';
+
+/**** Footer ****/
+@import 'footer';
+
+/**** Sidebar ****/
+@import 'sidebar';
+
+/**** Responsive ****/
+@import 'responsive';
