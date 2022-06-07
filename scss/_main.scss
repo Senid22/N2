@@ -1,0 +1,29 @@
+.main-wrapper {
+    height: 90vh;
+
+    .main-row-wrapper {
+
+        /* SIDE MENU */
+        #side-menu {
+            padding-top: $padding_classic;
+            display: block;
+            top: 0;
+            left: 0;
+            position: static;
+            width: 120px;
+            height: 100%;
+            min-height: 90vh;
+            background-color: $color_main_transparent;
+            border-right: 1px solid $color_main_border;
+        }
+
+        /* MAIN CONTENT MENU */
+        #main-content {
+            padding-top: $padding_classic;
+            display: block;
+        }
+
+        /* SIDEBAR */
+        @import 'sidebar';
+    }
+}

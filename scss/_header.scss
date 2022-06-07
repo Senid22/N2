@@ -1,8 +1,72 @@
 #site-header {
+    background-color: $color_main_transparent;
+    border-bottom: 1px solid $color_main_border;
+    height: 10vh;
+    padding: $padding_classic 0;
+
+    .flex-row {
+        align-items: center;
+    }
 
     .branding {
+        width: 120px;
+        display: flex;
+        border-right: 1px solid $color_main_border;
+        align-items: center;
+        justify-content: center;
+
         img {
             height: 70px;
+        }
+    }
+
+    .token-count {
+        padding-left: $padding_classic;
+        border-right: 1px solid $color_main_border;
+
+        img {
+            margin-right: $ma-10;
+        }
+
+        p {
+            color: $color_main_yellow;
+
+            span {
+                color: $color_white;
+            }
+        }
+    }
+
+    .serach-form {
+        border-right: 1px solid $color_main_border;
+
+        input {
+            position: relative;
+            color: $color_white;
+            display: block;
+            padding: $px-10 $px-20;
+            padding-right: 60px;
+            outline: none;
+            border-radius: 50px;
+            width: 80%;
+            background-color: $color_transparent;
+            border: 1px solid $color_main_border;
+
+            &::placeholder {
+                color: $color_main_border;
+            }
+        }
+
+        button {
+            margin-left: -50px;
+            z-index: 1000;
+            background-color: $color_transparent;
+            outline: none;
+            border: none;
+
+            span {
+                color: $color_main_border;
+            }
         }
     }
 

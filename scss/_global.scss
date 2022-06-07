@@ -12,7 +12,11 @@ body {
     position: relative;
     -webkit-font-smoothing: subpixel-antialiased;
     text-rendering: geometricPrecision;
-
+    /**** BACKGROUND ****/
+    background: linear-gradient($color_main_cover, $color_main_cover), url(/img/mainbg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1,
@@ -48,4 +52,15 @@ h5 {
 
 h6 {
     font-size: 1.125rem;
+}
+
+/**** TEXT ****/
+
+body {
+    font-size: .925rem;
+    color: $color_white;
+}
+
+a {
+    text-decoration: none;
 }

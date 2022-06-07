@@ -22,21 +22,21 @@
   <!-- TOP MENU -->
   <header id="site-header" class="header d-flex flex-row justify-content-between">
 
-    <div class="branding row">
+    <div class="branding">
       <img src="img/logo.png" alt="logo">
     </div>
 
-    <div class="token-count d-flex flex-row">
+    <div class="token-count d-flex flex-row align-items-center justify-content-center col-2">
       <img src="img/n2coins.png" alt="coin-img">
       <p>Token N2: <span>12 480</span></p>
     </div>
 
-    <div class="serach-form d-flex flex-row">
+    <div class="serach-form d-flex flex-row justify-content-center col-4">
       <input type="search" name="search-form" id="header-search" placeholder="Seach Player Space">
       <button type="submit"><span class="material-symbols-outlined">search</span></button>
     </div>
 
-    <nav class="quick-links">
+    <nav class="quick-links col-3">
       <ul class="nav navbar-nav d-flex flex-row" aria-label="${Header menu}" role="menubar">
         <li><a href="#"><span class="material-symbols-outlined">analytics</span></a></li>
         <li><a href="#"><span class="material-symbols-outlined">person_add</span></a></li>
@@ -48,52 +48,70 @@
       </ul>
     </nav>
 
-    <div class="user d-flex flex-row">
+    <div class="user d-flex flex-row col-2">
       <p>Hello <span class="username">Marianne</span></p>
       <img src="img/marianne.jpg" alt="user_profile">
     </div>
 
   </header>
 
-  <!-- SIDE MENU -->
-  <aside id="side-menu" role="menu">
-    <nav class="side-nav">
-      <ul>
-        <li><a href="#"><span class="material-symbols-outlined">hub</span>My Mission</a></li>
-        <li><a href="#"><span class="material-symbols-outlined">groups</span>My Players</a></li>
-        <li><a href="#"><span class="material-symbols-outlined">add_business</span>My Business Leads</a></li>
-        <li><a href="#"><span class="material-symbols-outlined">list_alt</span>My Tasks</a></li>
-        <li><a href="#"><span class="material-symbols-outlined">request_quote</span>My Invoices</a></li>
-        <li><a href="#"><span class="material-symbols-outlined">group_work</span>My Community Contributions</a></li>
-      </ul>
-    </nav>
-  </aside>
+  <div class="container-fluid main-wrapper">
+    <div class="row justify-content-between main-row-wrapper">
 
-  <!-- MAIN CONTENT -->
-  <main id="main-content" role="main">
+      <!-- SIDE MENU -->
+      <aside class="col-1 p-10" id="side-menu" role="menu">
+        <nav class="side-nav">
+          <ul>
+            <li><a href="#"><span class="material-symbols-outlined">hub</span>My Mission</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">groups</span>My Players</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">add_business</span>My Business Leads</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">list_alt</span>My Tasks</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">request_quote</span>My Invoices</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">group_work</span>My Community Contributions</a></li>
+          </ul>
+        </nav>
+      </aside>
 
+      <!-- MAIN CONTENT -->
+      <main class="col-8" id="main-content" role="main">
 
-  </main>
+        <h1>My Missions</h1>
+        <ul>
+          <li class="mission-short">
+            <a href="#">Hello World</a>
+          </li>
+          <li class="mission-short">
+            <a href="#">Second Mission</a>
+          </li>
+          <li class="mission-short">
+            <a href="#">Good Mission</a>
+          </li>
+        </ul>
 
-  <!-- SIDEBAR -->
-  <aside id="sidebar" role="complementary">
+      </main>
 
-    <div class="dummy-widget">
-      <h3>Work by your team</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus sapiente sint, perferendis quidem eligendi modi
-        pariatur dolorem iste ex, saepe eum quas delectus. Eius quasi saepe cumque cupiditate ducimus dolores.</p>
+      <!-- SIDEBAR -->
+      <aside class="col-3 p-10" id="sidebar" role="complementary">
+
+        <div class="dummy-widget">
+          <h3>Work by your team</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus sapiente sint, perferendis quidem eligendi
+            modi
+            pariatur dolorem iste ex, saepe eum quas delectus. Eius quasi saepe cumque cupiditate ducimus dolores.</p>
+        </div>
+
+        <div class="dummy-widget-list">
+          <h3>Work by your team</h3>
+          <ul>
+            <li><span class="material-symbols-outlined">diversity_3</span>Hatice</li>
+            <li><span class="material-symbols-outlined">diversity_3</span>Nicholas</li>
+            <li><span class="material-symbols-outlined">diversity_3</span>Nico</li>
+          </ul>
+        </div>
+
+      </aside>
     </div>
-
-    <div class="dummy-widget-list">
-      <h3>Work by your team</h3>
-      <ul>
-        <li><span class="material-symbols-outlined">diversity_3</span>Hatice</li>
-        <li><span class="material-symbols-outlined">diversity_3</span>Nicholas</li>
-        <li><span class="material-symbols-outlined">diversity_3</span>Nico</li>
-      </ul>
-    </div>
-
-  </aside>
+  </div>
 
 </body>
 

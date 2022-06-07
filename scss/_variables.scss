@@ -1,10 +1,18 @@
 /**** Fonts ****/
 $font_head: 'Lato', sans-serif;
 $font_text: 'Lato', sans-serif;
+
 /**** Colors ****/
+$color_main_blue: #21C9DD;
+$color_main_yellow: #F3BA4B;
+$color_white: #FFFFFF;
+$color_main_transparent: rgba(33, 201, 221, 0.05);
+$color_main_border: rgba(33, 201, 221, 0.20);
+$color_main_cover: rgba(5, 13, 32, 0.75);
 $color_red: #d31027;
 $color_text: #111c3b;
-$color_green: rgb(0, 168, 0);
+$color_green: #00a800;
+$color_transparent: rgba(255, 255, 255, 0);
 
 /**** Transition ****/
 $transition_cb1: cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -22,3 +30,19 @@ $shadow_modal: 0 0 0 2000px rgba(0, 0, 0, 0.5);
 
 /**** Boreder Radius ****/
 $border_radius: 2px;
+
+/**** Global Padding ****/
+$padding_classic: 20px;
+$px-10: 10px;
+$px-20: 20px;
+$px-40: 40px;
+$px-80: 80px;
+$px-100: 100px;
+
+/**** Global Margin ****/
+$margin_classic: 20px;
+$ma-10: 10px;
+$ma-20: 20px;
+$ma-40: 40px;
+$ma-80: 80px;
+$ma-100: 100px;
