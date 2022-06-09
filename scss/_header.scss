@@ -70,9 +70,37 @@
         }
     }
 
+    .quick-links {
+        border-right: 1px solid $color_main_border;
+
+        .main-nav {
+
+            li {
+                margin-right: $ma-20;
+
+                a {
+
+                    span {
+                        color: $color_white;
+                    }
+                }
+            }
+        }
+    }
+
     .user {
+        p {
+            margin-right: $ma-20;
+            text-transform: uppercase;
+            color: $color_main_border;
+
+            span {
+                color: $color_white;
+            }
+        }
         img {
-            height: 70px;
+            height: 50px;
+            border-radius: 100px;
         }
     }
 }

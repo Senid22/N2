@@ -7,20 +7,97 @@
         #side-menu {
             padding-top: $padding_classic;
             display: block;
-            top: 0;
+            top: 10vh;
             left: 0;
-            position: static;
+            position: absolute;
             width: 120px;
-            height: 100%;
+            height: 90vh;
             min-height: 90vh;
             background-color: $color_main_transparent;
             border-right: 1px solid $color_main_border;
+            transition: .3s $transition_cb2;
+
+            .side-nav {
+                
+                ul {
+                    width: 100%;
+                
+                    li {
+                        position: relative;
+
+                        a {
+                            display: inline-flex;
+                            align-items: center;
+                            color: $color_white;
+
+                            span {
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 80px;
+                                width: 80px;
+                                font-size: 42px;
+                                @include text-gradient(140deg, $color_main_blue, $color_main_yellow);
+                            }
+
+                            p {
+                                max-width: 160px;
+                                display: none;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: .3s $transition_cb3;
+                            }
+                        }
+
+                        &:active {
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                display: block;
+                                width: 4px;
+                                height: 100%;
+                                background-color: $color_main_yellow;
+                                border-radius: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #side-menu.opened {
+            width: 300px;
+            background-color: $color_main_cover;
+
+            .side-nav {
+
+                ul {
+
+                    li {
+                        border-bottom: 1px solid $color_main_transparent;
+                        a {
+
+                            span {
+                            }
+
+                            p {
+                                display: block;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         /* MAIN CONTENT MENU */
         #main-content {
             padding-top: $padding_classic;
             display: block;
+            margin-left: 120px;
         }
 
         /* SIDEBAR */
