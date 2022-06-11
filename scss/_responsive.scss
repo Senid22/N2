@@ -1,16 +1,18 @@
-// Device width = 576px and UP
-@media (min-width: 36rem) {}
+// Device width = 576px and DOWN
+@media (max-width: 36rem) {}
 
-// Device width = 768px and UP
-@media (min-width: 48rem) {}
+// Device width = 768px and DOWN
+@media (max-width: 48rem) {}
 
-// Device width = 992px and UP
-@media (min-width: 62rem) {}
+// Device width = 992px and DOWN
+@media (min-width: 300px) and (max-width: 992px) {
 
-// Device width = 1200px and UP
-@media (min-width: 75rem) {}
+}
 
-// Max widths
-@media(max-width: 992px) {}
+// Device width = 1200px and DOWN
+@media (max-width: 75rem) {}
 
-@media(max-width: 599px) {}
+// Min widths
+@media(min-width: 992px) {}
+
+@media(min-width: 599px) {}

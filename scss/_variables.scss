@@ -8,8 +8,12 @@ $color_main_green: #5fb58e;
 $color_main_yellow: #F3BA4B;
 $color_white: #FFFFFF;
 $color_main_transparent: rgba(33, 201, 221, 0.05);
+$color_main_green_transparent: rgba(95, 181, 142, 0.3);
+$color_main_yellow_transparent: rgba(243, 186, 75, 0.3);
 $color_main_border: rgba(33, 201, 221, 0.20);
-$color_main_cover: rgba(5, 13, 32, 0.75);
+$color_main_cover: rgba(21, 21, 53, 0.8);
+$color_menu_active: rgba(5, 13, 32, 0.95);
+$color_cover: rgba(5, 13, 32, 0.75);
 $color_red: #d31027;
 $color_text: #111c3b;
 $color_green: #00a800;
@@ -22,10 +26,12 @@ $transition_cb3: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 $transition_cb4: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 $transition_cb5: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 $transition_cb6: cubic-bezier(.68, .4, 1, .76);
+$transition_bg: ease-in-out;
 
 /**** Shadows ****/
-$shadow_header: 0 8px 11px rgba(0, 0, 0, 0.04);
-$shadow_btn: 0 0 8px 2px rgba(0, 0, 0, 0.03);
+$shadow_header: 0 4px 8px 11px rgba(0, 0, 0, 0.05);
+$shadow_side_menu: 4px 11px 8px 11px rgba(0, 0, 0, 0.05);
+$shadow_btn: 4px 0 8px 2px rgba(0, 0, 0, 0.15);
 $shadow_box: 0 7px 20px rgba(78, 78, 78, 0.05);
 $shadow_modal: 0 0 0 2000px rgba(0, 0, 0, 0.5);
 

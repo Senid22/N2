@@ -1,3 +1,7 @@
 #sidebar {
-    padding-top: $padding_classic;
+    padding: $padding_classic;
+    background-color: $color_main_transparent;
+    border: 1px solid $color_main_border;
+    margin: $ma-40 $ma-40 $ma-40 0 ;
+    min-width: 300px;
 }

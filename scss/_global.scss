@@ -13,10 +13,11 @@ body {
     -webkit-font-smoothing: subpixel-antialiased;
     text-rendering: geometricPrecision;
     /**** BACKGROUND ****/
-    background: linear-gradient($color_main_cover, $color_main_cover), url(/img/mainbg.png);
+    background: linear-gradient($color_cover $color_main_transparent), url(/img/mainbg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 h1,
@@ -63,4 +64,8 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a, a:hover {
+    transition: .2s $transition_bg;
 }

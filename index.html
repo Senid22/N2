@@ -20,78 +20,190 @@
 
 <body>
   <!-- TOP MENU -->
-  <header id="site-header" class="header d-flex flex-row justify-content-between">
+  <header id="site-header" class="header">
+    <div class="top-nav d-flex flex-row justify-content-between align-items-center">
+      <div class="branding">
+        <img src="img/logo.png" alt="logo">
+      </div>
 
-    <div class="branding">
-      <img src="img/logo.png" alt="logo">
+      <div class="token-count d-flex flex-row align-items-center justify-content-center col-2">
+        <img src="img/n2coins.png" alt="coin-img">
+        <p>Token N2: <span>12 480</span></p>
+      </div>
+
+      <div class="search-form d-flex flex-row justify-content-center col-4">
+        <input type="search" name="search-form" id="header-search" placeholder="Seach Player Space">
+        <button type="submit"><span class="material-symbols-outlined">search</span></button>
+      </div>
+
+      <nav class="quick-links d-flex justify-content-center col-3">
+        <ul class="main-nav navbar-nav d-flex flex-row" aria-label="${Header menu}" role="menubar">
+          <li><a href="#"><span class="material-symbols-outlined">analytics</span></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">person_add</span></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">domain_add</span></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">military_tech</span></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">redeem</span></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">contacts</span></li>
+          <li><a href="#"><span class="material-symbols-outlined">settings</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="user d-flex flex-row col-2 justify-content-center">
+        <p>Hello <span class="username">Marianne</span></p>
+        <img src="img/marianne.jpg" alt="user_profile">
+      </div>
     </div>
 
-    <div class="token-count d-flex flex-row align-items-center justify-content-center col-2">
-      <img src="img/n2coins.png" alt="coin-img">
-      <p>Token N2: <span>12 480</span></p>
-    </div>
-
-    <div class="serach-form d-flex flex-row justify-content-center col-4">
-      <input type="search" name="search-form" id="header-search" placeholder="Seach Player Space">
-      <button type="submit"><span class="material-symbols-outlined">search</span></button>
-    </div>
-
-    <nav class="quick-links d-flex justify-content-center col-3">
-      <ul class="main-nav navbar-nav d-flex flex-row" aria-label="${Header menu}" role="menubar">
-        <li><a href="#"><span class="material-symbols-outlined">analytics</span></a></li>
-        <li><a href="#"><span class="material-symbols-outlined">person_add</span></a></li>
-        <li><a href="#"><span class="material-symbols-outlined">domain_add</span></a></li>
-        <li><a href="#"><span class="material-symbols-outlined">military_tech</span></a></li>
-        <li><a href="#"><span class="material-symbols-outlined">redeem</span></a></li>
-        <li><a href="#"><span class="material-symbols-outlined">contacts</span></li>
-        <li><a href="#"><span class="material-symbols-outlined">settings</span></a></li>
-      </ul>
-    </nav>
-
-    <div class="user d-flex flex-row col-2 justify-content-center">
-      <p>Hello <span class="username">Marianne</span></p>
-      <img src="img/marianne.jpg" alt="user_profile">
-    </div>
+    <!-- SIDE MENU -->
+    <aside class="side-menu col-1 p-10" id="side-menu" role="menu">
+      <nav class="side-nav d-flex justify-content-center">
+        <ul>
+          <li><a href="#"><span class="material-symbols-outlined">hub</span><p>My Mission</p></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">groups</span><p>My Players</p></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">add_business</span><p>My Business Leads</p></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">list_alt</span><p>My Tasks</p></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">request_quote</span><p>My Invoices</p></a></li>
+          <li><a href="#"><span class="material-symbols-outlined">group_work</span><p>My Community Contributions</p></a></li>
+        </ul>
+      </nav>
+    </aside>
 
   </header>
 
   <div class="container-fluid main-wrapper">
-    <div class="row justify-content-between main-row-wrapper">
-
-      <!-- SIDE MENU -->
-      <aside class="side-menu col-1 p-10" id="side-menu" role="menu">
-        <nav class="side-nav d-flex justify-content-center">
-          <ul>
-            <li><a href="#"><span class="material-symbols-outlined">hub</span><p>My Mission</p></a></li>
-            <li><a href="#"><span class="material-symbols-outlined">groups</span><p>My Players</p></a></li>
-            <li><a href="#"><span class="material-symbols-outlined">add_business</span><p>My Business Leads</p></a></li>
-            <li><a href="#"><span class="material-symbols-outlined">list_alt</span><p>My Tasks</p></a></li>
-            <li><a href="#"><span class="material-symbols-outlined">request_quote</span><p>My Invoices</p></a></li>
-            <li><a href="#"><span class="material-symbols-outlined">group_work</span><p>My Community Contributions</p></a></li>
-          </ul>
-        </nav>
-      </aside>
+    <div class="row d-flex justify-content-between main-row-wrapper">
 
       <!-- MAIN CONTENT -->
-      <main class="col-9" id="main-content" role="main">
+      <main class="main-content" id="main-content" role="main">
 
-        <h1>My Missions</h1>
-        <ul>
+        <h1 class="single-title">My Missions</h1>
+        <ul class="mission">
           <li class="mission-short">
-            <a href="#">Hello World</a>
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
           </li>
           <li class="mission-short">
-            <a href="#">Second Mission</a>
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
           </li>
           <li class="mission-short">
-            <a href="#">Good Mission</a>
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
+          </li>
+          <li class="mission-short">
+            <ul class="mission-details d-flex flex-row justify-content-between align-items-center">
+              <li class="mission-detail mission-id"><a href="#"><span class="material-symbols-outlined">format_list_numbered</span>MIS00000031</a></li>
+              <li class="mission-detail mission-desc"><span class="material-symbols-outlined">short_text</span>DELOITTE CCQ - Gestion des services</li>
+              <li class="mission-detail mission-customer"><a href="#"><span class="material-symbols-outlined">domain</span>Fx Innovation</a></li>
+              <li class="mission-detail mission-state"><span class="material-symbols-outlined"> timelapse </span>Completed</li>
+              <li class="mission-detail mission-bby"><a href="#"><span class="material-symbols-outlined"> supervisor_account </span>Nicolas Delaby</a></li>
+              <li class="mission-detail mission-node"><a href="#"><span class="material-symbols-outlined"> account_tree </span>ITsnow Solutions</a></li>
+            </ul>
           </li>
         </ul>
 
       </main>
 
       <!-- SIDEBAR -->
-      <aside class="col-2 p-10" id="sidebar" role="complementary">
+      <aside class="col-2" id="sidebar" role="complementary">
 
         <div class="dummy-widget">
           <h3>Work by your team</h3>

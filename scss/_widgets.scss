@@ -1,0 +1,34 @@
+// My Mission
+
+.mission {
+    border-radius: $border_radius;
+
+    .mission-short {
+        padding: $px-20;
+        margin-top: $ma-20;
+        background-color: $color_main_transparent;
+
+        .mission-details {
+
+            .mission-detail {
+                display: flex;
+                align-items: center;
+                font-size: .85rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: $color_white;
+
+                    &:hover {
+                        color: $color_main_yellow;
+                    }
+
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
