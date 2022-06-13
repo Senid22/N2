@@ -497,8 +497,6 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: geometricPrecision;
   /**** BACKGROUND ****/
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 13, 32, 0.75))), url('../img/mainbg.png');
-  background: linear-gradient(rgba(5, 13, 32, 0.75) rgba(33, 201, 221, 0.05));
   background-image: url('../img/mainbg.png');
   background-position: center center;
   background-repeat: no-repeat;
