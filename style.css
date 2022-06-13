@@ -497,6 +497,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: geometricPrecision;
   /**** BACKGROUND ****/
+  background-color: rgb(5, 13, 32);
   background-image: url('../img/mainbg.png');
   background-position: center center;
   background-repeat: no-repeat;
